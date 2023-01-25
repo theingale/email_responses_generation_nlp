@@ -1,0 +1,3 @@
+# Constants 
+IP_SENT_MAXLENGTH = 56
+OP_SENT_MAXLENGTH = 17
