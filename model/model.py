@@ -12,8 +12,8 @@ from utils.constants import OP_SENT_MAXLENGTH
 
 
 # Load embedding matrix
-enc_embedding_matrix = np.load('embeddings\encoder_emb_matrix.npy')
-dec_embedding_matrix = np.load('embeddings\decoder_emb_matrix.npy')
+enc_embedding_matrix = np.load('embeddings/encoder_emb_matrix.npy')
+dec_embedding_matrix = np.load('embeddings/decoder_emb_matrix.npy')
 
 # Define Model
 
@@ -162,14 +162,14 @@ def build_model():
     glove_model.compile(optimizer=tf.keras.optimizers.Adam(),
                     loss=loss_function)
     # sample data
-    enc_input = np.load('data\enc_input_sample.npy')
-    dec_input = np.load('data\dec_input_sample.npy')
-    dec_output = np.load('data\dec_output_sample.npy')
+    enc_input = np.load('data/enc_input_sample.npy')
+    dec_input = np.load('data/dec_input_sample.npy')
+    dec_output = np.load('data/dec_output_sample.npy')
     # initialize model state
     glove_model.fit([enc_input, dec_input],dec_output, epochs=1, batch_size=128)
     print("Model Initialized Successfully")
     # load best model state
-    glove_model.load_weights('model_weights\epoch-10_loss-1.091.h5')
+    glove_model.load_weights('model_weights/epoch-10_loss-1.091.h5')
     print("Restored weights Successfully")
     # return_model
     print("Model is ready...")
