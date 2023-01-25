@@ -7,10 +7,10 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 
 # Load Tokenizers
-with open('tokenizers\input_tokenizer.pkl', 'rb') as handle:
+with open('tokenizers/input_tokenizer.pkl', 'rb') as handle:
     input_tokenizer = joblib.load(handle)
 
-with open('tokenizers\output_tokenizer.pkl', 'rb') as handle:
+with open('tokenizers/output_tokenizer.pkl', 'rb') as handle:
     output_tokenizer = joblib.load(handle)
 
 # Tokenizers constants
