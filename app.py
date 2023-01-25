@@ -16,7 +16,8 @@ def main():
     """
     # Title and Description 
     st.title("Short Response Suggestion for E-mails")
-    st.write("An AI application that suggests relevant short response for your Email text.")
+    st.write("""An AI application that uses Deep Learning and Natural Language Processing techniques and 
+                suggests short response relevant to your Email text.""")
     st.text('')
 
     # Make model ready
