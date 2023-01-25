@@ -1,4 +1,4 @@
-# email_responses_generation_nlp
+# Short Email Response Generation using Deep Learning and NLP
 
 This project is based on the research paper by Google. Paper link:- https://arxiv.org/abs/1606.04870 
 
