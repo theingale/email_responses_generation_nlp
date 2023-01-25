@@ -1,2 +1,10 @@
 # email_responses_generation_nlp
-Generate short relevant responses for email texts using Natural Language Processing techniques.
+
+This project is based on the research paper by Google. Paper link:- https://arxiv.org/abs/1606.04870 
+
+Reading and replying hundreads of Emails in a week is quite tedious job to do. Using Natural Language Processing
+and modern Deep Learning techniques a system can be designed which can read the email texts and suggests response
+relevant to the email text. The project involves development of a such a smart system and deployment of the system as
+a web application on the public cloud.
+
+Application link: https://theingale-email-responses-generation-nlp-app-wwzqr2.streamlit.app/ 
